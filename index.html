@@ -153,8 +153,8 @@
 
     //计算某年是不是闰年，通过求年份除以4的余数即可
     function daysMonth(month, year) {
-        var tmp = year % 4;
-        if (tmp == 0) {
+//        var tmp = year % 4;
+        if (year%4 == 0&&year%100!=0||year%400==0) {
             return (month_olympic[month]);
         } else {
             return (month_normal[month]);
